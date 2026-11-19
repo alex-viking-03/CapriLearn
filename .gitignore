@@ -17,4 +17,16 @@ dist/
 *.egg-info/
 
 .vs/
+.vscode/
 *.user
+*.suo
+
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+.DS_Store
+Thumbs.db

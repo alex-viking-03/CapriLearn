@@ -1,0 +1,6 @@
+@CapriAPI_HostAddress = http://localhost:5167
+
+GET {{CapriAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
