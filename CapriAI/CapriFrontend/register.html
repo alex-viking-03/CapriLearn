@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Register</title>
+       <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <form method="POST" class="registration_form">
+         <h1>
+             Registration form
+         </h1>
+
+         <label for="username">Username</label>
+         <input type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+                class="form_input"
+                required />
+
+         <label for="email">Email</label>
+         <input type="email"
+                name="email"
+                id="email"
+                class="form_input"
+                required />
+
+         <label for="password">Password</label>
+         <input type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                minlength=8
+                class="form_input"
+                required />
+
+         <label for="age">Age</label>
+         <input type="number"
+                name="age"
+                id="age"
+                placeholder="Age"
+                min=14
+                max=100
+                class="form_input"
+                required />
+         
+         <fieldset>
+             <legend>Select language:</legend>
+             <label>
+                 <input type="checkbox" name="language" value="python">
+                 Python
+             </label>
+
+             <label>
+                 <input type="checkbox" name="language" value="csharp">
+                 C#
+             </label>
+
+             <label>
+                 <input type="checkbox" name="language" value="javascript">
+                 JavaScript
+             </label>
+         </fieldset>
+        
+
+         <label for="difficulty">Difficulty:</label>
+         <select id="difficulty" name="difficulty">
+             <option value="easy">Easy</option>
+             <option value="medium">Medium</option>
+             <option value="hard">Hard</option>
+         </select>
+         
+         <div>
+             <label for="goals">Learning goals</label>
+             <textarea id="goals" name="goals" class="form_input"></textarea>
+         </div>
+
+         <button type="submit" class="form_button">Register</button>
+         <button type="reset" class="form_button">Reset</button>
+      </form>
+   </body>
+</html>

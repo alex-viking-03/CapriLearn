@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.registration_form {
+    width: 450px;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    margin: 30px;
+}
+
+.form_input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+.form_button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+h1 {
+    color: blue;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    background-color: purple;
+    color: white
+}
