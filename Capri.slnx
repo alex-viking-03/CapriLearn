@@ -3,4 +3,5 @@
     <Build Project="false" />
   </Project>
   <Project Path="CapriAPI/CapriAPI.csproj" Id="6f1a79ae-79cc-4cec-8fc7-3722c94d7ef7" />
+  <Project Path="CapriFrontendNew/CapriFrontendNew.csproj" Id="dc89592a-cbfe-413c-8af0-4498dcd80ea8" />
 </Solution>

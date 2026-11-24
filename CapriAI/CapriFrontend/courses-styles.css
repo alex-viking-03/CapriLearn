@@ -1,0 +1,51 @@
+.dashboard {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.sidebar {
+    flex-basis: 250px;
+    flex-shrink: 0;
+    height: 500px;
+    background-color: grey;
+}
+
+.main-content {
+    flex-grow: 1;
+    height: 500px;
+    background-color: aqua;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+
+}
+
+.course-container {
+    display: flex;
+    gap: 20px;
+}
+
+.course-card {
+    width: 200px;
+    height: 120px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.course-description {
+    order: 3;
+}
+
+.course-lessons {
+    order: 1;
+}
+
+.course-progress {
+    order: 2;
+}

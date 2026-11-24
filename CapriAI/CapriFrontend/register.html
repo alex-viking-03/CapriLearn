@@ -7,58 +7,81 @@
        <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-      <form method="POST" class="registration_form">
+      <header class="navbar">
+          <div class="logo">Capri</div>
+
+          <nav class="navigation">
+              <a href="#">Courses</a>
+              <a href="#">Lessons</a>
+              <a href="#">Profile</a>
+          </nav>
+
+          <button class="login_button">Login</button>
+      </header>
+      <form method="POST" class="registration-form">
          <h1>
              Registration form
          </h1>
-
-         <label for="username">Username</label>
-         <input type="text"
-                name="username"
-                id="username"
-                placeholder="Username"
-                class="form_input"
-                required />
-
-         <label for="email">Email</label>
-         <input type="email"
-                name="email"
-                id="email"
-                class="form_input"
-                required />
-
-         <label for="password">Password</label>
-         <input type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                minlength=8
-                class="form_input"
-                required />
-
-         <label for="age">Age</label>
-         <input type="number"
-                name="age"
-                id="age"
-                placeholder="Age"
-                min=14
-                max=100
-                class="form_input"
-                required />
+         
+         <p class="hidden-message">
+             Welcome to Capri!
+         </p>
+            
+         <div class="form-group">
+             <label for="username">Username</label>
+             <input type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                    class="form-input"
+                    required />
+         </div>
+         
+         <div class="form-group">
+             <label for="email">Email</label>
+             <input type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    required />
+         </div>
+         
+         <div class="form-group">
+             <label for="password">Password</label>
+             <input type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                    minlength=8
+                    class="form-input"
+                    required />
+         </div>
+         
+         <div class="form-group">
+             <label for="age">Age</label>
+             <input type="number"
+                    name="age"
+                    id="age"
+                    placeholder="Age"
+                    min=14
+                    max=100
+                    class="form-input"
+                    required />
+         </div>
          
          <fieldset>
              <legend>Select language:</legend>
-             <label>
+             <label class="form-checkbox">
                  <input type="checkbox" name="language" value="python">
                  Python
              </label>
 
-             <label>
+             <label class="form-checkbox">
                  <input type="checkbox" name="language" value="csharp">
                  C#
              </label>
 
-             <label>
+             <label class="form-checkbox">
                  <input type="checkbox" name="language" value="javascript">
                  JavaScript
              </label>
@@ -74,11 +97,11 @@
          
          <div>
              <label for="goals">Learning goals</label>
-             <textarea id="goals" name="goals" class="form_input"></textarea>
+             <textarea id="goals" name="goals" class="form-input"></textarea>
          </div>
 
-         <button type="submit" class="form_button">Register</button>
-         <button type="reset" class="form_button">Reset</button>
+         <button type="submit" class="form-button">Register</button>
+         <button type="reset" class="form-button">Reset</button>
       </form>
    </body>
 </html>

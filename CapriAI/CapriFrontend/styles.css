@@ -2,7 +2,29 @@
     box-sizing: border-box;
 }
 
-.registration_form {
+.form-checkbox {
+    display: block
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+}
+
+    .navbar .navigation {
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        flex: 1;    
+    }
+
+    .navbar .login_button {
+        display: flex;
+    }
+
+.registration-form {
     width: 450px;
     padding: 25px;
     border: 1px solid gray;
@@ -10,18 +32,30 @@
     margin: 30px;
 }
 
-.form_input {
+.form-input {
     width: 100%;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 6px;
 }
 
-.form_button {
+.form-button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
     margin-top: 15px;
+    display: inline-block;
+    width: 120px;
+    height: 45px
+}
+
+.hidden-message {
+    display: none
+}
+
+.form-group label{
+    display: block;
+    margin: 8px 0px;
 }
 
 h1 {

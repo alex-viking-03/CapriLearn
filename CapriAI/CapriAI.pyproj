@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5c54cbc3-fcae-491b-96bd-ea59c7674dca</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CapriAI.py</StartupFile>
+    <StartupFile>CapriBackend\CapriAI.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,37 +22,37 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="CapriAI.py" />
-    <Compile Include="Controllers\AdminController.py" />
-    <Compile Include="Controllers\CapriController.py" />
-    <Compile Include="Controllers\CourseController.py" />
-    <Compile Include="Controllers\TaskController.py" />
-    <Compile Include="Controllers\TaskTestCaseController.py" />
-    <Compile Include="Controllers\UserController.py" />
-    <Compile Include="Database.py" />
-    <Compile Include="DTOs\CapriEvent.py" />
-    <Compile Include="DTOs\CourseDTO.py" />
-    <Compile Include="DTOs\TaskDTO.py" />
-    <Compile Include="DTOs\TaskTestCaseDTO.py" />
-    <Compile Include="DTOs\UserDTO.py" />
-    <Compile Include="Enums\CapriEventType.py" />
-    <Compile Include="DTOs\CapriSettings.py" />
-    <Compile Include="DTOs\Request.py" />
-    <Compile Include="Enums\ProgrammingLanguages.py" />
-    <Compile Include="Enums\UserRole.py" />
+    <Compile Include="CapriBackend\CapriAI.py" />
+    <Compile Include="CapriBackend\Controllers\AdminController.py" />
+    <Compile Include="CapriBackend\Controllers\CapriController.py" />
+    <Compile Include="CapriBackend\Controllers\CourseController.py" />
+    <Compile Include="CapriBackend\Controllers\TaskController.py" />
+    <Compile Include="CapriBackend\Controllers\TaskTestCaseController.py" />
+    <Compile Include="CapriBackend\Controllers\UserController.py" />
+    <Compile Include="CapriBackend\Database.py" />
+    <Compile Include="CapriBackend\DTOs\CapriEvent.py" />
+    <Compile Include="CapriBackend\DTOs\CourseDTO.py" />
+    <Compile Include="CapriBackend\DTOs\TaskDTO.py" />
+    <Compile Include="CapriBackend\DTOs\TaskTestCaseDTO.py" />
+    <Compile Include="CapriBackend\DTOs\UserDTO.py" />
+    <Compile Include="CapriBackend\Enums\CapriEventType.py" />
+    <Compile Include="CapriBackend\DTOs\CapriSettings.py" />
+    <Compile Include="CapriBackend\DTOs\Request.py" />
+    <Compile Include="CapriBackend\Enums\ProgrammingLanguages.py" />
+    <Compile Include="CapriBackend\Enums\UserRole.py" />
     <Compile Include="Example.py" />
-    <Compile Include="init_db.py" />
-    <Compile Include="main.py" />
-    <Compile Include="Models\Course.py" />
-    <Compile Include="Models\Task.py" />
-    <Compile Include="Models\TaskTestCase.py" />
-    <Compile Include="Models\User.py" />
-    <Compile Include="Security\PasswordHasher.py" />
-    <Compile Include="Services\AdminService.py" />
-    <Compile Include="Services\CourseService.py" />
-    <Compile Include="Services\TaskService.py" />
-    <Compile Include="Services\TaskTestCaseService.py" />
-    <Compile Include="Services\UserService.py" />
+    <Compile Include="CapriBackend\init_db.py" />
+    <Compile Include="CapriBackend\main.py" />
+    <Compile Include="CapriBackend\Models\Course.py" />
+    <Compile Include="CapriBackend\Models\Task.py" />
+    <Compile Include="CapriBackend\Models\TaskTestCase.py" />
+    <Compile Include="CapriBackend\Models\User.py" />
+    <Compile Include="CapriBackend\Security\PasswordHasher.py" />
+    <Compile Include="CapriBackend\Services\AdminService.py" />
+    <Compile Include="CapriBackend\Services\CourseService.py" />
+    <Compile Include="CapriBackend\Services\TaskService.py" />
+    <Compile Include="CapriBackend\Services\TaskTestCaseService.py" />
+    <Compile Include="CapriBackend\Services\UserService.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include=".venv\">
@@ -66,17 +66,24 @@
     </Interpreter>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTOs\" />
-    <Folder Include="Models\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="CapriBackend\DTOs\" />
+    <Folder Include="CapriBackend\Models\" />
+    <Folder Include="CapriBackend\Enums\" />
+    <Folder Include="CapriBackend\Controllers\" />
     <Folder Include="CapriFrontend\" />
-    <Folder Include="Security\" />
-    <Folder Include="Services\" />
+    <Folder Include="CapriBackend\" />
+    <Folder Include="CapriBackend\Security\" />
+    <Folder Include="CapriBackend\Services\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CapriFrontend\courses-styles.css" />
+    <Content Include="CapriFrontend\courses.html" />
     <Content Include="CapriFrontend\index.html" />
-    <Content Include="Services\__init__.py" />
+    <Content Include="CapriFrontend\lessons-cards-style.css" />
+    <Content Include="CapriFrontend\lessons-cards.html" />
+    <Content Include="CapriFrontend\register.html" />
+    <Content Include="CapriFrontend\styles.css" />
+    <Content Include="CapriBackend\Services\__init__.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
